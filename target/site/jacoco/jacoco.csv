@@ -1,0 +1,9 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+smart-house,ru.netology.domain,Printer,4,0,0,0,2,0,2,0,2,0
+smart-house,ru.netology.domain,TShirt,62,0,12,0,8,0,9,0,3,0
+smart-house,ru.netology.domain,MFU,11,0,0,0,5,0,3,0,3,0
+smart-house,ru.netology.domain,Book,106,11,14,0,21,3,16,2,9,2
+smart-house,ru.netology.domain,NotFoundException,0,4,0,0,0,2,0,1,0,1
+smart-house,ru.netology.domain,Product,52,50,6,6,10,13,13,4,7,4
+smart-house,ru.netology.domain,Scanner,4,0,0,0,2,0,2,0,2,0
+smart-house,ru.netology.repository,ProductRepository,0,127,0,10,0,28,0,10,0,5

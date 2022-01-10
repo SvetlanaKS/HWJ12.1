@@ -19,22 +19,22 @@ public class ProductRepository {
         return items;
     }
 
-    public Product findById(int id, Product[] items1) {
-        for (Product item : items1) {
+    public Product findById(int id) {
+        Product[] result = new Product[1];
+        int i = 0;
+        for (Product item : findAll()) {
             if (item.getId() == id) {
-                return item;
+                result[i] = item;
             }
         }
-        return null;
+        return result[i];
     }
 
     public void removeById(int id) {
-        int length = items.length - 1;
-        Product[] tmp = new Product[length];
-        ProductRepository element = new ProductRepository();
-        this.items = items;
         int index = 0;
-        if (element.findById(id, items) != null) {
+        if (findById(id) != null) {
+            int length = items.length - 1;
+            Product[] tmp = new Product[length];
             for (Product item : items) {
                 if (item.getId() != id) {
                     tmp[index] = item;
@@ -46,4 +46,5 @@ public class ProductRepository {
             throw new NotFoundException("Element with id: " + id + " not found");
         }
     }
+
 }
